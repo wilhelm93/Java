@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class calculator_Methods {
+public class calculator_methodsWithSwitchCases{
     public static void main (String [] args) {
 
     Scanner scanner = new Scanner(System.in);
