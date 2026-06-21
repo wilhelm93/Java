@@ -14,7 +14,7 @@ public class calculator_switchCase {
     System.out.println("Bitte geben Sie die zweite Zahl ein:");
     double zahl2 = scanner.nextDouble();
 
-    System.out.println("Bitte Geben Sie die Operation ein:");
+    System.out.println("Bitte Geben Sie die Operation (+, -, /,  *) ein:");
     char operation = scanner.next().charAt(0);
 
     // calculator operations: +,-,/,*
@@ -32,6 +32,8 @@ public class calculator_switchCase {
         case '*':
             System.out.println("Antwort: " + (zahl1 * zahl2));
             break;
+        default:
+            System.out.println("Bitte geben Sie eine gültige Operation ein. +, -, / oder *");
     }
 
 
