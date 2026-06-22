@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class toDoList {
+public class test {
 
     public static List<String> taskList = new ArrayList<>();
 
@@ -61,7 +61,11 @@ public class toDoList {
             return "Task added: " + taskName + "\n" + "----------";
         }
         public static String listAddedTasks ( int option, String taskName){
-            System.out.println("--- Current Tasks ---");
+            if (taskList.isEmpty()){
+            	System.out.println("Task list es empty!");
+            }
+        	
+        	System.out.println("--- Current Tasks ---");
             for (String element : taskList) {
                 System.out.println("-> " + element);
             }
