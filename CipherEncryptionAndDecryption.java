@@ -15,7 +15,6 @@ public class CipherEncryptionAndDecryption {
             int option = scanner.nextInt();
             scanner.nextLine();
 
-            boolean running = true;
             switch (option) {
                 case 1:
                     System.out.println("Enter text to encrypt: ");
@@ -32,7 +31,8 @@ public class CipherEncryptionAndDecryption {
                     break;
 
                 case 3:
-                    running = false;
+                    System.out.println("Goodbye");
+                    return;
             }
         }
 
